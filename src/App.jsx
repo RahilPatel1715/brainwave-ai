@@ -1,15 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import ButtonGradiant from "./assets/svg/ButtonGradient";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+        <Hero />
+      </div>
+
+      <ButtonGradiant />
     </>
   );
-}
+};
 
 export default App;
